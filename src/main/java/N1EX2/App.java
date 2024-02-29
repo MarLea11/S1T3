@@ -35,11 +35,6 @@ public class App {
 
         // 4. Inserting the elements of the previous list into the new one but in reverse order
 
-        // Using FOR Loop
-        /*for (int i = list.size()-1; i>= 0; i--) {
-            listReverse.add(list.get(i));
-        }*/
-
         // Using ListIterator Object methods
         ListIterator<Integer> iterator = list.listIterator(list.size());
         while(iterator.hasPrevious()) {
@@ -47,11 +42,6 @@ public class App {
         }
 
         // Print of the second list in reverse order
-
-        // Using FOR loop
-        /*for (int i = 0; i<listReverse.size(); i++) {
-            System.out.println(listReverse.get(i));
-          }*/
 
         // Using an ITERATOR
         ListIterator<Integer> iterator2 = listReverse.listIterator();

@@ -17,8 +17,7 @@ public class App {
         // 1. Creating a HashMap and a new file name to work with later
 
         HashMap<String, String> mapCountry = new HashMap<>();
-        String fileRanking = "C:\\Users\\marrl\\Documents\\Java Backend\\S1T3\\src" +
-                                    "\\main\\java\\N1EX3\\txt\\Ranking.txt";
+        String fileRanking = "src/main/java/N1EX3/txt/Ranking.txt";
 
         // Reading the file and adding information to the HashMap calling a method
         readFile(mapCountry);
@@ -59,8 +58,7 @@ public class App {
 
     public static void readFile(HashMap<String, String> mapCountry) {
 
-        try (FileReader file = new FileReader("C:\\Users\\marrl\\Documents\\Java Backend\\S1T3\\src" +
-                                                            "\\main\\java\\N1EX3\\txt\\countries.txt")) {
+        try (FileReader file = new FileReader("src/main/java/N1EX3/txt/countries.txt")) {
             BufferedReader reader = new BufferedReader(file);
             String chain;
             while ((chain = reader.readLine()) != null) {
